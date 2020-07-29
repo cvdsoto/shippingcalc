@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Shipping Calculator</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <main>
+    <form>
+      <label>
+        Package Weight (lbs): <input type="number" id="pckWeight-1">
+      </label>
+      <label>
+        Package Dimensions (L x W x H in inches):
+        <input type="number" id="pckL-1"> <input type="number" id="pckW-1"> <input type="number" id="pckH-1">
+      </label>
+      <input type="submit" value="Calculate" id="calculate" />
+      <button type="button" id="reset">Reset</button>
+    </form>
+
+    <div id="results">
+      <p>Air Cargo: PHP <span id="air-cargo">0.00</span></p>
+      <p>Air Cargo with Special Handling: PHP <span id="air-cargo-sh">0.00</span></p>
+      <p>Sea Cargo: PHP <span id="sea-cargo">0.00</span></p>
+    </div>
+  </main>
+</body>
+</html>
