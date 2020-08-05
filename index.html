@@ -13,17 +13,21 @@
   <main>
     <form>
       <label>
-        Package Weight (lbs): <input type="number" id="pckWeight-1">
+        Package Weight (lbs): <input type="number" id="pckWeight">
       </label>
       <label>
         Package Dimensions (L x W x H in inches):
-        <input type="number" id="pckL-1"> <input type="number" id="pckW-1"> <input type="number" id="pckH-1">
+        <input type="number" id="pckL"> <input type="number" id="pckW"> <input type="number" id="pckH">
+      </label>
+      <label>
+        Declared Value (USD):<input type="number" id="dValue">
       </label>
       <input type="submit" value="Calculate" id="calculate" />
       <button type="button" id="reset">Reset</button>
     </form>
 
     <div id="results">
+      <p>Insurance: PHP <span id="insurance">0.00</span></p>
       <p>Air Cargo: PHP <span id="air-cargo">0.00</span></p>
       <p>Air Cargo with Special Handling: PHP <span id="air-cargo-sh">0.00</span></p>
       <p>Sea Cargo: PHP <span id="sea-cargo">0.00</span></p>
